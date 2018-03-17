@@ -1,11 +1,11 @@
 # @bitchcraft/injector
 
 ```
-,   |
-|———|———————=——\
-|———|———————|   ]%%===———,
-|———|———————=——/        · °
-'   |                  · °
+  ,   |
+  |———|———————=——\
+  |———|———————|)  ]%%===———,
+  |———|———————=——/        · °
+  '   |                  · °
 ```
 
 Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.
