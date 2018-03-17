@@ -1,7 +1,11 @@
 # @bitchcraft/injector
 
 ```
-awesome auto-injector ascii art
+,   |
+|———|———————=——\
+|———|———————|   ]%%===———,
+|———|———————=——/        · °
+'   |                  · °
 ```
 
 Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.
@@ -13,9 +17,9 @@ Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.
 
 ## What’s in the bento?
 
-* ✔️ **withInjector** HoC (higher order component) — conveniently wraps your component and takes care of adding and removing HTMLStyleElements
-* ✔️ **injector-loader** for Webpack (tested w/ `1.14.0`, `3.11.0`) — prepares your valid CSS to be converted into a template
-* ✔️ **Webpack config** fragment (for Webpack 2+) — Webpack 1 user? Update pl0x 😹. Don’t worry, we got you covered. You will find installation instructions for Webpack 1 further down.
+* **withInjector** HoC (higher order component) — conveniently wraps your component and takes care of adding and removing HTMLStyleElements
+* **injector-loader** for Webpack (tested w/ `1.14.0`, `3.11.0`) — prepares your valid CSS to be converted into a template
+* **Webpack config** fragment (for Webpack 2+) — Webpack 1 user? Update pl0x 😹. Don’t worry, we got you covered. You will find installation instructions for Webpack 1 further down.
 
 
 ### So what does it do?
@@ -322,4 +326,4 @@ Injector is free software und the BSD-3-Clause (see [LICENSE.md](./LICENSE.md)).
 
 # Contributors
 
-	* [Josh Li](https://github.com/maddrag0n) (Maintainer)
+* [Josh Li](https://github.com/maddrag0n) (Maintainer)
