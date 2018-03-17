@@ -6,7 +6,6 @@
 	"license": "BSD-3-Clause",
 	"dependencies": {
 		"@bitchcraft/unicorn-logger": "^1.1.1",
-		"hoist-non-react-statics": "^2.5.0",
 		"react": "^16.2.0",
 		"recompose": "^0.26.0",
 		"uuid": "^3.2.1",
