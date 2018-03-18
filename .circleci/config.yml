@@ -12,18 +12,18 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
-        name: install deps
-        command: yarn install
+          name: install deps
+          command: yarn install
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
       - run:
-        name: test
-        command: yarn run test src
+          name: test
+          command: yarn run test src
       - run:
-        name: bundle
-        command: yarn run bundle
+          name: bundle
+          command: yarn run bundle
       - persist_to_workspace:
           root: lib
           paths:
@@ -33,13 +33,13 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-        at: lib
+          at: lib
       - run:
-        name: npm token
-        command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          name: npm token
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
-        name: publish
-        command: yarn publish --new-version $CIRCLE_TAG
+          name: publish
+          command: yarn publish --new-version $CIRCLE_TAG
 
 workflows:
   version: 2
@@ -47,8 +47,8 @@ workflows:
     jobs:
       - build
       - deploy:
-        requires:
-          - build
-        filters:
-          tags:
-            only: /[0-9]+(\.[0-9]+)*/
+          requires:
+            - build
+            filters:
+              tags:
+                only: /[0-9]+(\.[0-9]+)*/
