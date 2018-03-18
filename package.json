@@ -1,6 +1,6 @@
 {
 	"name": "@bitchcraft/injector",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"private": false,
 	"description": "Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.",
 	"license": "BSD-3-Clause",
@@ -41,6 +41,9 @@
 	},
 	"peerDependencies": {
 		"autoprefixer": "^8.1.0",
+		"handlebars-loader": "^1.6.0",
+		"postcss-loader": "^2.1.2",
+		"sass-loader": "^6.0.7",
 		"webpack": ">=1.14.0 < 5.0.0"
 	},
 	"jest": {
