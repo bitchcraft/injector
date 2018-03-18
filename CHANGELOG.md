@@ -1,4 +1,4 @@
-# 1.0.2
+# 1.0.3
 
 - add less-loader to peer dependencies
 - update README with peer deps installation instructions
