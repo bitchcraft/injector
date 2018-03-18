@@ -39,12 +39,12 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: bump version
-          command: npm --no-git-tag-version version 1.0.3
+          command: npm --no-git-tag-version version 1.0.4
       - run:
           name: publish
           command: npm pack
       - store_artifacts:
-          path: bitchcraft-injector-1.0.3.tgz
+          path: bitchcraft-injector-1.0.4.tgz
 
 workflows:
   version: 2
@@ -54,3 +54,8 @@ workflows:
       - deploy:
           requires:
             - build
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /[0-9]+(\.[0-9]+)*/
