@@ -38,8 +38,13 @@ jobs:
           name: npm token
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
+          name: bump version
+          command: npm --no-git-tag-version version 1.0.3
+      - run:
           name: publish
-          command: yarn publish --new-version $CIRCLE_TAG
+          command: npm pack
+      - store_artifacts:
+          path: bitchcraft-injector-1.0.3.tgz
 
 workflows:
   version: 2
