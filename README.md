@@ -8,6 +8,8 @@
   '   |                  · °
 ```
 
+[![CircleCI](https://circleci.com/gh/bitchcraft/injector.svg?style=svg&circle-token=316326df0acd10be73ddb1cf55cb7e9d93b63736)](https://circleci.com/gh/bitchcraft/injector)
+
 Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.
 
 * Exclusively build for ReactJS and Webpack
@@ -336,5 +338,5 @@ Injector is free software und the BSD-3-Clause (see [LICENSE.md](./LICENSE.md)).
 
 
 # Contributors
- 
+
 * [Josh Li](https://github.com/maddrag0n) (Maintainer)
