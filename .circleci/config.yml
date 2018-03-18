@@ -30,14 +30,16 @@ jobs:
             - injector.es5.js
   deploy:
     <<: *defaults
-    - attach_workspace:
-      at: lib
-    - run:
-      name: npm token
-      command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-    - run:
-      name: publish
-      command: yarn publish --new-version $CIRCLE_TAG
+    steps:
+      - checkout
+      - attach_workspace:
+        at: lib
+      - run:
+        name: npm token
+        command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+        name: publish
+        command: yarn publish --new-version $CIRCLE_TAG
 
 workflows:
   version: 2
