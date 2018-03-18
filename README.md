@@ -57,9 +57,20 @@ Have a look at [Radium](https://github.com/FormidableLabs/radium), which is basi
 
 ### 1) Install injector
 
+Commands provided for Yarn and NPM, please use either (but not both).
+
 ```sh
 $ yarn add @bitchcraft/injector
 $ npm install -P @bitchcraft/injector
+```
+
+#### Install peer devDependencies
+
+Technically you only have to install sass-loader if you are using scss/sass. In that case Yarn/NPM will print a unmet peer dependencies warning tho.
+
+```sh
+$ yarn add --dev handlebars-loader sass-loader less-loader postcss-loader
+$ npm install -D handlebars-loader sass-loader less-loader postcss-loader
 ```
 
 
