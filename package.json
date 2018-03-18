@@ -41,6 +41,9 @@
 	},
 	"peerDependencies": {
 		"autoprefixer": "^8.1.0",
+		"handlebars-loader": "^1.6.0",
+		"postcss-loader": "^2.1.2",
+		"sass-loader": "^6.0.7",
 		"webpack": ">=1.14.0 < 5.0.0"
 	},
 	"jest": {
