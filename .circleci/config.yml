@@ -1,5 +1,5 @@
 defaults: &defaults
-  working_directory: /tmp
+  working_directory: ~/repo
   docker:
     - image: circleci/node:carbon
 
