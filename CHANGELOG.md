@@ -1,4 +1,8 @@
-# 1.0.2
+# 1.1.0
+
+- remove webpack-bundle-analyzer (reported vulnerability, non-critical for injector)
+
+# 1.0.3
 
 - add less-loader to peer dependencies
 - update README with peer deps installation instructions
