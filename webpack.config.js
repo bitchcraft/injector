@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 const path = require('path');
 const webpack = require('webpack');
+const { peerDependencies } = require('./package.json');
 
 const config = {
 	context: path.resolve(__dirname),
@@ -10,6 +11,15 @@ const config = {
 			'./src/index.js',
 		],
 	},
+	externals: Object.keys(peerDependencies)
+		.concat([
+			'react-dom',
+			'react-addons-transition-group',
+		])
+		.reduce((acc, dep) => {
+			acc[dep] = `umd ${dep}`;
+			return acc;
+		}, {}),
 	output: {
 		path: path.resolve(__dirname, 'lib'),
 		filename: '[name].es5.js',

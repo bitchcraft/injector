@@ -14,8 +14,8 @@ import type { WrapperComponentType } from './typedef';
  */
 const getDisplayName = (Component: WrapperComponentType): string => {
 	if (Component.displayName) return String(Component.displayName);
-	Component.displayName = `unnamed-component-${uuid()}`;
-	return Component.displayName;
+	const displayName = `unnamed-component-${uuid()}`;
+	return displayName;
 };
 
 export default getDisplayName;
