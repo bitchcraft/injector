@@ -1,6 +1,6 @@
 {
 	"name": "@bitchcraft/injector",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"private": false,
 	"description": "Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.",
 	"license": "BSD-3-Clause",
