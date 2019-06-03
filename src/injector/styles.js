@@ -44,6 +44,7 @@ export const injectStyles = (
 
 	const stylesheetComponentIdKey = uuid();
 	const displayName = options.displayName || getDisplayName(WrappedComponent);
+	WrappedComponent.displayName = displayName;
 	const stylesheetId = `stylesheet-${displayName}`;
 
 	if (typeof window !== 'undefined') {
