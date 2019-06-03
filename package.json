@@ -35,8 +35,7 @@
 		"jsdom": "^11.6.2",
 		"react": "^16.2.0",
 		"react-test-renderer": "^16.2.0",
-		"remark-preset-lint-recommended": "^3.0.1",
-		"webpack": "^3.11.0"
+		"remark-preset-lint-recommended": "^3.0.1"
 	},
 	"peerDependencies": {
 		"autoprefixer": "^8.1.0",
