@@ -1,9 +1,10 @@
-defaults: &defaults
+version: 2.1
+
+x-defaults: &defaults
   working_directory: ~/repo
   docker:
     - image: circleci/node:carbon
 
-version: 2
 jobs:
   build:
     <<: *defaults
