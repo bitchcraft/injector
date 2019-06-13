@@ -2353,8 +2353,9 @@ eslint-plugin-flowtype-errors@^3.3.7:
     slash "^1.0.0"
 
 eslint-plugin-flowtype@^3.9.1:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-3.9.1.tgz#6491d930e1f96d53c510e0393e635fddd4a4cac5"
+  version "3.10.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-3.10.2.tgz#909fd52a3356553088ad8375be68fe6516926db6"
+  integrity sha512-oA56v1KJk6nORN6I4gHwA83wia0Ph7wClPbPTJENGKre9Q+BDF8uX73e1QroKVnn7Bt05VE4BN6F9OQ1RmdqDw==
   dependencies:
     lodash "^4.17.11"
 
