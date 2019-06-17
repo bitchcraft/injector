@@ -22,6 +22,12 @@ jobs:
           name: test
           command: yarn run test src
       - run:
+          name: lint
+          command: yarn run lint
+      - run:
+          name: type check
+          command: yarn run flow
+      - run:
           name: bundle
           command: yarn run bundle
       - persist_to_workspace:
