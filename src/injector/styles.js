@@ -39,14 +39,11 @@ export const injectStyles = (
 	template: HandlebarsTemplate,
 	styles: Styles,
 	theme: Theme,
-	options: {
-		displayName?: string,
-		theme?: Theme,
-		[string]: *, },
+	options: { [string]: *, },
 ) => {
 
 	const stylesheetComponentIdKey = uuid();
-	const displayName: string = options.displayName || getDisplayName(WrappedComponent);
+	const displayName = options.displayName || getDisplayName(WrappedComponent);
 	WrappedComponent.displayName = displayName;
 	const stylesheetId = `stylesheet-${displayName}`;
 

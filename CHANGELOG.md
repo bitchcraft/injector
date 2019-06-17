@@ -1,7 +1,3 @@
-# 1.1.1
-
-- version bumps
-
 # 1.1.0
 
 - remove webpack-bundle-analyzer (reported vulnerability, non-critical for injector)
