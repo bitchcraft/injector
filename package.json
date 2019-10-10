@@ -48,7 +48,7 @@
 		"expect": "^24.8.0",
 		"extract-text-webpack-plugin": "^3.0.2",
 		"file-loader": "^4.0.0",
-		"flow-bin": "^0.108.0",
+		"flow-bin": "^0.109.0",
 		"jest": "^24.8.0",
 		"jsdom": "^15.1.1",
 		"react": "^16.2.0",
