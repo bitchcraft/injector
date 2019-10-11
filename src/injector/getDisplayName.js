@@ -13,6 +13,7 @@ import type { WrapperComponentType } from './typedef';
  * @return {string}                 - displayName
  */
 const getDisplayName = (Component: WrapperComponentType): string => {
+	// $FlowFixMe
 	if (Component.displayName) return String(Component.displayName);
 	const displayName = `unnamed-component-${uuid()}`;
 	return displayName;

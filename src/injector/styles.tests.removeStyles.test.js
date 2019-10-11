@@ -1,6 +1,8 @@
 /* eslint-env jest */
-import { injectStyles, removeStyles } from './styles';
+/* eslint-disable max-classes-per-file */
+
 import { JSDOM as Jsdom } from 'jsdom';
+import { injectStyles, removeStyles } from './styles';
 
 // mock browser
 const dom = new Jsdom('<!DOCTYPE html><html><head></head><body></body></html>');
@@ -13,7 +15,7 @@ class SomeOtherComponent { static displayName = 'SomeOtherComponent' }
 
 const components = [{
 	component: SomeComponent,
-	styles: theme => ({
+	styles: (theme) => ({
 		color: 'red',
 	}),
 	theme: {},
@@ -21,7 +23,7 @@ const components = [{
 },
 {
 	component: SomeOtherComponent,
-	styles: theme => ({
+	styles: (theme) => ({
 		color: 'blue',
 	}),
 	theme: {},
@@ -29,7 +31,7 @@ const components = [{
 },
 {
 	component: SomeComponent,
-	styles: theme => ({
+	styles: (theme) => ({
 		color: 'white',
 	}),
 	theme: {},
