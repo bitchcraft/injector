@@ -24,13 +24,13 @@ import type { HandlebarsTemplate, Styles, WrapperComponentType } from './typedef
  */
 export default function inject(
 	template: HandlebarsTemplate = () => '',
-	styles?: Styles = t => ({}),
+	styles?: Styles = (t) => ({}),
 	options?: { [string]: *, }) {
 	return function wrapWithInjector(WrappedComponent: WrapperComponentType) {
 		class StyleInjector extends Component<{}, {}> {
 			static displayName = `StyleInjector(${getDisplayName(WrappedComponent)})`
 
-			componentWillMount() {
+			UNSAFE_componentWillMount() {
 				if (!options) options = { theme: {} };
 				const result = injectStyles(WrappedComponent, template, styles, this.context.theme || options.theme, options);
 				this.stylesheetID = result.id;
@@ -54,6 +54,7 @@ export default function inject(
 			}
 
 			stylesheetID = ''
+
 			stylesheetComponentIdKey = ''
 		}
 

@@ -34,6 +34,7 @@ const stylesheets = new Map();
  * @param  {Object}             [options.theme]       - override theme
  * @return {Object}             - id (stylesheetId), componentIdKey (instance uuid), noop (true when window === undefined)
  */
+
 export const injectStyles = (
 	WrappedComponent: WrapperComponentType,
 	template: HandlebarsTemplate,
@@ -44,6 +45,7 @@ export const injectStyles = (
 
 	const stylesheetComponentIdKey = uuid();
 	const displayName = options.displayName || getDisplayName(WrappedComponent);
+	// $FlowFixMe
 	WrappedComponent.displayName = displayName;
 	const stylesheetId = `stylesheet-${displayName}`;
 
