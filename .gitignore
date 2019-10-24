@@ -93,3 +93,5 @@ app/__tests__/__snapshots__/
 /app/__tests__/__snapshots__/app.test.jsx.snap
 /.cache-loader
 /docs
+
+.eslintcache
