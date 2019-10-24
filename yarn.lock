@@ -6901,6 +6901,11 @@ webpack-cli@^3.3.9:
     v8-compile-cache "2.0.3"
     yargs "13.2.4"
 
+webpack-global-object-x@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/webpack-global-object-x/-/webpack-global-object-x-1.0.0.tgz#05472c169bb73eb766fbdf4104b8d2c2942eb124"
+  integrity sha512-oCJkgHy/RU3Tjkou0wyqI2m31ttGY4FaT11R87ObRYiNuGqVvFjMFUskJZSUFmy818IuVDdS2rTfwhbOpuRnmQ==
+
 webpack-sources@^1.0.1, webpack-sources@^1.4.0, webpack-sources@^1.4.1:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.4.3.tgz#eedd8ec0b928fbf1cbfe994e22d2d890f330a933"

@@ -1,3 +1,10 @@
+# 1.1.2
+
+- update to webpack 4
+- update critical dependencies
+- fix bundle creation
+
+
 # 1.1.1
 
 - roll back to working bundle version

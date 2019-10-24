@@ -1,6 +1,9 @@
 /* eslint-disable no-console */
 const path = require('path');
 const webpack = require('webpack');
+
+const globalObject = require('webpack-global-object-x');
+
 const { peerDependencies } = require('./package.json');
 
 const config = {
@@ -25,6 +28,7 @@ const config = {
 		filename: '[name].es5.js',
 		library: 'Injector',
 		libraryTarget: 'umd',
+		globalObject: '(' + globalObject.toString() + '())',
 	},
 	plugins: [
 		new webpack.NoEmitOnErrorsPlugin(),

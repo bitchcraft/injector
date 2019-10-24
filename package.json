@@ -1,6 +1,6 @@
 {
 	"name": "@bitchcraft/injector",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"private": false,
 	"description": "Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.",
 	"license": "BSD-3-Clause",
@@ -8,7 +8,8 @@
 		"@babel/runtime-corejs2": "^7.6.3",
 		"@bitchcraft/unicorn-logger": "^1.1.1",
 		"recompose": "^0.30.0",
-		"uuid": "^3.3.3"
+		"uuid": "^3.3.3",
+		"webpack-global-object-x": "^1.0.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.6.4",
@@ -33,7 +34,6 @@
 		"@babel/preset-env": "^7.0.0",
 		"@babel/preset-flow": "^7.0.0",
 		"@babel/preset-react": "^7.6.3",
-		"@babel/runtime-corejs2": "^7.4.5",
 		"babel-core": "^7.0.0-bridge.0",
 		"babel-eslint": "^10.0.3",
 		"babel-jest": "^24.9.0",
@@ -90,7 +90,12 @@
 		"bundle": "NODE_ENV=production webpack --progress && yarn run test lib"
 	},
 	"author": "Josh Li (https://github.com/maddrag0n)",
-	"contributors": [],
+	"contributors": [
+		{
+			"name": "David Silva",
+			"url": "https://github.com/zGrav"
+		}
+	],
 	"main": "lib/injector.es5.js",
 	"repository": "https://github.com/bitchcraft/injector"
 }
