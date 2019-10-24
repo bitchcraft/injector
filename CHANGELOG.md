@@ -1,3 +1,8 @@
+# 1.1.1
+
+- roll back to working bundle version
+
+
 # 1.1.0
 
 - remove webpack-bundle-analyzer (reported vulnerability, non-critical for injector)
