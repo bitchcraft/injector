@@ -1,6 +1,6 @@
 {
 	"name": "@bitchcraft/injector",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"private": false,
 	"description": "Inject CSS styles on demand for ReactJS Components. Keeps your DOM lean.",
 	"license": "BSD-3-Clause",
@@ -90,7 +90,12 @@
 		"bundle": "NODE_ENV=production webpack --progress && yarn run test lib"
 	},
 	"author": "Josh Li (https://github.com/maddrag0n)",
-	"contributors": [],
+	"contributors": [
+		{
+			"name": "David Silva",
+			"url": "https://github.com/zGrav"
+		}
+	],
 	"main": "lib/injector.es5.js",
 	"repository": "https://github.com/bitchcraft/injector"
 }
