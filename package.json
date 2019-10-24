@@ -11,8 +11,8 @@
 		"uuid": "^3.3.3"
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.6.3",
-		"@babel/core": "^7.0.0",
+		"@babel/cli": "^7.6.4",
+		"@babel/core": "^7.6.4",
 		"@babel/plugin-proposal-class-properties": "^7.0.0",
 		"@babel/plugin-proposal-decorators": "^7.0.0",
 		"@babel/plugin-proposal-do-expressions": "^7.0.0",
@@ -51,13 +51,13 @@
 		"expect": "^24.9.0",
 		"extract-text-webpack-plugin": "^3.0.2",
 		"file-loader": "^4.2.0",
-		"flow-bin": "^0.109.0",
+		"flow-bin": "^0.110.1",
 		"jest": "^24.9.0",
-		"jsdom": "^15.1.1",
-		"react": "^16.10.2",
-		"react-test-renderer": "^16.10.2",
+		"jsdom": "^15.2.0",
+		"react": "^16.11.0",
+		"react-test-renderer": "^16.11.0",
 		"remark-preset-lint-recommended": "^3.0.3",
-		"webpack": "^4.41.0",
+		"webpack": "^4.41.2",
 		"webpack-cli": "^3.3.9"
 	},
 	"peerDependencies": {
