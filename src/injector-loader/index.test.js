@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import injectorLoader from './';
+import injectorLoader from './index';
 
 describe('injectorLoader()', () => {
 	const tests = [{

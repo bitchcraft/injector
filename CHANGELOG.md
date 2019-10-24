@@ -1,6 +1,7 @@
 # 1.1.1
 
-- version bumps
+- roll back to working bundle version
+
 
 # 1.1.0
 

@@ -34,19 +34,18 @@ const stylesheets = new Map();
  * @param  {Object}             [options.theme]       - override theme
  * @return {Object}             - id (stylesheetId), componentIdKey (instance uuid), noop (true when window === undefined)
  */
+
 export const injectStyles = (
 	WrappedComponent: WrapperComponentType,
 	template: HandlebarsTemplate,
 	styles: Styles,
 	theme: Theme,
-	options: {
-		displayName?: string,
-		theme?: Theme,
-		[string]: *, },
+	options: { [string]: *, },
 ) => {
 
 	const stylesheetComponentIdKey = uuid();
-	const displayName: string = options.displayName || getDisplayName(WrappedComponent);
+	const displayName = options.displayName || getDisplayName(WrappedComponent);
+	// $FlowFixMe
 	WrappedComponent.displayName = displayName;
 	const stylesheetId = `stylesheet-${displayName}`;
 

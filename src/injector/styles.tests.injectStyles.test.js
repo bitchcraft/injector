@@ -1,6 +1,8 @@
 /* eslint-env jest */
-import { injectStyles } from './styles';
+/* eslint-disable max-classes-per-file */
+
 import { JSDOM as Jsdom } from 'jsdom';
+import { injectStyles } from './styles';
 
 // mock browser
 const dom = new Jsdom('<!DOCTYPE html><html><head></head><body></body></html>');
@@ -13,7 +15,7 @@ class SomeOtherComponent { static displayName = 'SomeOtherComponent' }
 
 const components = [{
 	component: SomeComponent,
-	styles: theme => ({
+	styles: (theme) => ({
 		color: 'red',
 	}),
 	theme: {},
@@ -21,7 +23,7 @@ const components = [{
 },
 {
 	component: SomeOtherComponent,
-	styles: theme => ({
+	styles: (theme) => ({
 		color: 'blue',
 	}),
 	theme: {},
@@ -29,7 +31,7 @@ const components = [{
 },
 {
 	component: SomeComponent,
-	styles: theme => ({
+	styles: (theme) => ({
 		color: 'white',
 	}),
 	theme: {},
@@ -77,7 +79,7 @@ describe('injectStyles()', () => {
 			expect(nodeCandidate.getAttribute('type')).toBe('text/css');
 		});
 
-		const expectedStyles = template(components.find(c => c.componentIdKey === sheetComponentsMap[id][0]).styles());
+		const expectedStyles = template(components.find((c) => c.componentIdKey === sheetComponentsMap[id][0]).styles());
 
 		it(`DOM Node with id ${id} should have textContent '${expectedStyles.replace(/(\n|\r)/gi, ' ')}'`, () => {
 			expect(nodeCandidate.textContent.trim()).toBe(expectedStyles.trim());

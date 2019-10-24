@@ -1,4 +1,6 @@
 /* eslint-env jest */
+/* eslint-disable max-classes-per-file */
+
 import getDisplayName from './getDisplayName';
 
 describe('getDisplayName()', () => {
