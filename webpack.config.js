@@ -6,7 +6,7 @@ const { peerDependencies } = require('./package.json');
 
 const config = {
 	context: path.resolve(__dirname),
-	devtool: 'inline-source-map',
+	devtool: process.env.NODE_ENV !== 'production' ? 'inline-source-map' : '',
 	entry: {
 		injector: [
 			'./src/index.js',
