@@ -1,5 +1,10 @@
 # 1.1.2
 
+- minor changes in globalObject settings
+- add another alternative to README
+
+# 1.1.2
+
 - update to webpack 4
 - update critical dependencies
 - fix bundle creation

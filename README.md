@@ -45,7 +45,10 @@ With Injector you will have the ability to use themes and custom overrides, by e
 
 ### Are their alternatives to injector?
 
-Have a look at [Radium](https://github.com/FormidableLabs/radium), which is basically React Inline Styles on ’roids!
+Have a look at
+
+- [Radium](https://github.com/FormidableLabs/radium), which is basically React Inline Styles on ’roids!
+- [Material UI styles](https://material-ui.com/styles/api/), which supports different ways to inject stylesheets (via classNames and styled components)
 
 
 ### Limitations
