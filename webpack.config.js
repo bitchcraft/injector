@@ -2,8 +2,6 @@
 const path = require('path');
 const webpack = require('webpack');
 
-const globalObject = require('webpack-global-object-x');
-
 const { peerDependencies } = require('./package.json');
 
 const config = {
@@ -28,7 +26,7 @@ const config = {
 		filename: '[name].es5.js',
 		library: 'Injector',
 		libraryTarget: 'umd',
-		globalObject: '(' + globalObject.toString() + '())',
+		globalObject: 'this',
 	},
 	plugins: [
 		new webpack.NoEmitOnErrorsPlugin(),
