@@ -52,7 +52,7 @@
 		"file-loader": "^4.2.0",
 		"flow-bin": "^0.116.1",
 		"jest": "^24.9.0",
-		"jsdom": "^15.2.0",
+		"jsdom": "^16.0.0",
 		"react": "^16.11.0",
 		"react-test-renderer": "^16.11.0",
 		"remark-preset-lint-recommended": "^3.0.3",
