@@ -30,7 +30,8 @@ export default function inject(
 		class StyleInjector extends Component<{}, {}> {
 			static displayName = `StyleInjector(${getDisplayName(WrappedComponent)})`
 
-			UNSAFE_componentWillMount() {
+			constructor(props: {}, context?: {}) {
+				super(props, context);
 				if (!options) options = { theme: {} };
 				const result = injectStyles(WrappedComponent, template, styles, this.context.theme || options.theme, options);
 				this.stylesheetID = result.id;
